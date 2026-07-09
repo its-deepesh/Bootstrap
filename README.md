@@ -60,6 +60,30 @@ It provides pre-written **CSS classes**, **JavaScript behavior**, and ready-made
 </html>
 ```
 
+## Bootstrap Grid System
+The Bootstrap grid helps you divide a page into 12 columns.
+
+```
+<div class="row">
+    <div class="col-6">Left</div>
+    <div class="col-6">Right</div>
+</div>
+```
+Since `6 + 6 = 12`, both boxes take half the row.
+
+### Responsive Grid
+One of Bootstrap's biggest strengths is that the layout can change based on screen size.
+
+```
+<div class="col-md-6">
+```
+- On **mobile (<768px)** → the column takes the full width (100%).
+- On **medium screens and larger (≥768px)** → it takes **6 out of 12 columns** (50%).
+<br>
+
+---
+<br>
+
 ## Bootstrap Infixes
 Infixes are like special labels that tell your website when to change its layout based on the screen size.
 
@@ -68,6 +92,10 @@ Infixes are like special labels that tell your website when to change its layout
 ```
 - `col-6` means on extra small screens (default), the column takes up 6 units (half the row width).
 - `col-lg-2` means on large screens (≥ 992px), the column takes up 2 units (one-sixth of the row width), so you get 6 columns side by side.
+<br>
+
+---
+<br>
 
 ## Bootstrap Modifiers
 In Bootstrap, **modifiers** are like special tags added to CSS classes that change how an element looks or behaves without rewriting the whole style. 
@@ -85,3 +113,34 @@ In Bootstrap, **modifiers** are like special tags added to CSS classes that chan
 - `alert-primary` is a modifier that colors the alert blue (Bootstrap’s primary color).
 - `alert-danger` is another modifier that colors the alert red, indicating an error or danger.
 - `role="alert"` helps screen readers understand this is an important message.
+
+<br>
+
+---
+
+<br>
+
+## Spacing Utilities
+One of Bootstrap's best features is that you rarely need to write CSS for spacing.
+- ### Margin (`m`)
+  ```
+  <div class="m-3">Content</div>
+  ```
+  Adds margin on **all sides**.
+
+- ### Padding (`p`)
+  ```
+  <div class="p-3">Content</div>
+  ```
+  Adds padding on **all sides**.
+
+### Spacing Scale
+Bootstrap uses numbers from 0 to 5.
+| Class | Approximate Spacing |
+|:---:  |:---:|
+|`0`|0|
+| `1`|Small|  
+|`2`|Medium-Small|
+|`3`|Medium|
+|`4`|Large|
+|`5`|Extra-Large|
